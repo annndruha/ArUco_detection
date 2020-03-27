@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>Stream</title>
+    <style>
+        #data {
+            text-align: center;
+            font-size: 200%;
+        }
+    </style>
+    <script src="/static/js/jquery.js"></script>
+    <script>
+        if (!!window.EventSource) {
+            var source = new EventSource('/text_stream');
+            source.onmessage = function (e) { $("#data").text(e.data); }
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <h1>Video streaming</h1>
+        <p id="data">
+            Received broken!
+        </p>
+        <img src="{{ url_for('video_feed') }}"/>
+    </center>
+</body>
