@@ -1,0 +1,31 @@
+<!doctype html>
+<title>Web Streaming</title>
+<style>
+    #data {
+        text-align: center;
+        font-size: 200%;
+    }
+</style>
+
+<script src="./js/jquery.js"></script>
+<script>
+    if (!!window.EventSource) {
+        var source = new EventSource('/');
+        source.onmessage = function (e) {$("#data").text(e.data);}
+    }
+</script>
+
+
+
+<body>
+    <center>
+        <h1>My coding video streaming</h1>
+
+        <div id="data">
+            <!-- Отображение даты и времени-->
+            Received broken!
+        </div>
+    </center>
+</body>
+
+
