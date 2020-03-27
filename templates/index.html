@@ -1,21 +1,22 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
-    <title>Video streaming</title>
+    <title>Stream</title>
 </head>
 
 
 <body>
     <center>
-        <h1>Video streaming</h1>
-        <img src="{{ url_for('video_feed') }}">
+        <h1>My coding video streaming</h1>
+        <img src="{{ url_for('video_feed') }}"/>
 
-        <iframe src="{{ url_for('meta_info') }}" type='text/html'></iframe>
+        <frame src="{{ url_for('meta_info') }}" type='text/html'></frame>
+        <a href="https://github.com/Annndruha">Visit my GitHub</a>
         <!--<script>
-        let d = new Date();
-        document.body.innerHTML = "<h4>Datetime " + d + "</h4>"
+    let d = new Date();
+    document.body.innerHTML = "<h4>Datetime " + d + "</h4>"
     </script>-->
     </center>
 </body>
