@@ -1,10 +1,11 @@
-import cv2 as cv
+import cv2
 import numpy as np
 
-MARKER_ID = 42 # ID from 0 tp 1023
+MARKER_ID = 5
+di = cv2.aruco.DICT_6X6_50
 
-dictionary = cv.aruco.Dictionary_get(cv.aruco.DICT_6X6_250)
-markerImage = np.zeros((200, 200), dtype=np.uint8)
-markerImage = cv.aruco.drawMarker(dictionary, MARKER_ID, 200, markerImage, 1)
+RESOLUTION = 200
+markerImage = np.zeros((RESOLUTION, RESOLUTION), dtype=np.uint8)
+markerImage = cv2.aruco.drawMarker(cv2.aruco.Dictionary_get(di), MARKER_ID, RESOLUTION, markerImage, 1)
 
-cv.imwrite(f"marker{MARKER_ID}.png", markerImage)
+cv2.imwrite(f"marker{MARKER_ID}.png", markerImage)

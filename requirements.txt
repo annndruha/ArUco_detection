@@ -1,0 +1,7 @@
+	# Python 3.6.8
+opencv-python==4.2.0.34 
+opencv-contrib-python==4.2.0.34
+	# DEPS: numpy==1.18.2
+flask==1.1.2 
+	# DEPS: click==7.1.1, itsdangerous==1.1.0, Jinja2==2.11.1, MarkupSafe==1.1.1, Werkzeug==1.0.1
+imutils=0.5.3
