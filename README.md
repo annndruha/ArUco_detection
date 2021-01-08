@@ -4,12 +4,15 @@
 **Полное описание проекта в pdf-файле**
 
 Пример распознавания маркера:
+
 ![marker](./examples/marker.png)
 
 Калибровка камеры:
-<img src="./examples/calibration.jpg" style="zoom:50%;" />
+
+<img src="./examples/calibration.jpg" style="zoom:30%;" />
 
 Трансляция видеопотока на сервер и определение координат камеры:
+
 <img src="./examples/streaming.jpg" alt="streaming" style="zoom: 33%;" />
 
 Код состоит из нескольких основных файлов:
